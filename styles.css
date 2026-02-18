@@ -23,17 +23,27 @@ article {
     width: 302px;
 }
 
-button {
+.card__button {
     margin: 0;
     border-radius: var(--spacing-100);
     overflow: hidden;
     padding: 0;
     border: none;
     background: none;
+    position: relative;
+}
+.card__button__image {
+    width: 100%;
 }
 
-button img {
-    width: 100%;
+.card__button__view {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    display: none;
 }
 
 .card__content {
@@ -42,7 +52,7 @@ button img {
     gap: var(--spacing-200);
 }
 
-.card__content h1 {
+.card__content__header {
     font: var(--font-weight-semibold) var(--font-size-xl) / var(--line-height-regular) var(--font-family-outfit);
     color: var(--white);
     margin: 0;
@@ -101,4 +111,22 @@ footer p {
 
 .author{
     color: var(--white);
+}
+
+/*STATES*/
+
+.text--active{
+    color: var(--cyan-400);
+}
+
+.card__button__view--active {
+    display: block;
+}
+
+.card__button:hover::before {
+    background-color: var(--cyan-400);
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
 }
