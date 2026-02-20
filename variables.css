@@ -1,0 +1,32 @@
+:root {
+    /*COLORS*/
+    --white: hsl(0, 100%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --blue-950: hsl(217, 54%, 11%);
+    --blue-900: hsl(216, 50%, 16%);
+    --blue-800: hsl(215, 32%, 27%);
+    --blue-500: hsl(215, 51%, 70%);
+    --cyan-400: hsl(178, 100%, 50%);
+
+    /*TYPOGRAPHY*/
+    --font-family-outfit: "Outfit", sans-serif;
+
+    --font-weight-bold: 600;
+    --font-weight-semibold: 400;
+    --font-weight-light: 300;
+
+    --font-size-xl: 22px;
+    --font-size-large: 18px;
+    --font-size-regular: 16px;
+
+    --letter-spacing-regular: 0;
+
+    --line-height-large: 1.45;
+    --line-height-regular: 1.25;
+
+    /*SPACING*/
+    --spacing-0: 0px;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+}
