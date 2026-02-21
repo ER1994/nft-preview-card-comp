@@ -12,6 +12,8 @@ main {
     background-color: var(--blue-900);
     border-radius: var(--spacing-200);
     padding: var(--spacing-300);
+    display: flex;
+    justify-content: center;
 }
 
 article {
@@ -20,7 +22,8 @@ article {
     justify-content: center;
     align-items: center;
     gap: var(--spacing-300);
-    width: 302px;
+    max-width: 302px;
+    width: 90%;
 }
 
 .card__button {
